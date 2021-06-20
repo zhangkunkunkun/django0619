@@ -20,6 +20,7 @@
         <br>
         <form method="POST" action="{% url 'register' %}" onsubmit="return check()">
             {% csrf_token %}
+            <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp邮箱注册</h1>
             <div class="form-group">
                 <label
                     for="exampleInputEmail1">用户名&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
@@ -68,7 +69,14 @@
             <br>
             <label id="submit_info"></label><br>
             <button type="submit" class="btn">注册</button>
+
         </form>
+
+            <br><br>
+            <h3>&nbsp&nbsp&nbsp&nbsp</h3>
+            <button type="submit" class="btn">微信注册(待开发）</button>
+            <button type="submit" class="btn">谷歌注册(待开发）</button>
+
     </div>
     {% endblock %}
 </body>

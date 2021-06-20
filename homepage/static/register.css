@@ -1,0 +1,26 @@
+.divElement {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 500px;
+    height: 500px;
+    background-color: #f7f3f2;
+    border-radius: 42px;
+}
+
+.btn {
+    float: right;
+    margin-right: 10%;
+    width: 80%;
+    font: bold 20px Arial;
+    text-decoration: none;
+    background-color: #f4511e;
+    color: #f3f1f1;
+    padding: 15px 15px 15px 15px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #f5f4f4;
+    border-bottom: 1px solid #f3efef;
+    border-left: 1px solid #CCCCCC;
+}

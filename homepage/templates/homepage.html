@@ -5,6 +5,11 @@
 
 <head>
     {% block head %}
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>极致日语</title>
     <link rel="stylesheet" href="{% static 'homepage.css' %}">
     {% endblock %}
@@ -15,12 +20,7 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#myPage">logo待开发</a>
+                <a class="navbar-brand" href="#">logo待开发</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
@@ -54,8 +54,8 @@
         </div>
     </div>
 
-     <!-- Container (Pricing Section) -->
-     <div id="pricing" class="container-fluid">
+    <!-- Container (Pricing Section) -->
+    <div id="pricing" class="container-fluid">
         <div class="text-center">
             <h2>学习套餐</h2>
             <h4>根据您的需求选择套餐</h4>
@@ -189,7 +189,8 @@
                     <h4>8/12～8/26日 日语线上夏练营<br><span>夏练营半个月期间，表现前三位的同学，学费全免</span></h4>
                 </div>
                 <div class="item">
-                    <h4>日本人外交特殊课程<br><span>我们每周二举办，和日本人的直接交流会，可以线上观听，日本人之间的对话，<br>以及团队老师和日本人之间的对话，为同学创造最纯正的日语环境。</span></h4>
+                    <h4>日本人外交特殊课程<br><span>我们每周二举办，和日本人的直接交流会，可以线上观听，日本人之间的对话，<br>以及团队老师和日本人之间的对话，为同学创造最纯正的日语环境。</span>
+                    </h4>
                 </div>
             </div>
 
@@ -260,7 +261,7 @@
                     // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
                     $('html, body').animate({
                         scrollTop: $(hash).offset().top
-                    }, 900, function () {
+                    }, 800, function () {
 
                         // Add hash (#) to URL when done scrolling (default click behavior)
                         window.location.hash = hash;
@@ -273,7 +274,7 @@
                     var pos = $(this).offset().top;
 
                     var winTop = $(window).scrollTop();
-                    if (pos < winTop + 600) {
+                    if (pos < winTop + 900) {
                         $(this).addClass("slide");
                     }
                 });

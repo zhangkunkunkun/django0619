@@ -1,11 +1,11 @@
 .divElement {
     position: absolute;
     top: 20%;
-    left: 40%;
+    left: 30%;
     margin-top: -50px;
     margin-left: -50px;
     width: 500px;
-    height: 500px;
+    height: 800px;
     background-color: #f7f3f2;
     border-radius: 42px;
 }

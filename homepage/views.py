@@ -1,4 +1,4 @@
-from django.http.response import HttpResponse
+from django.http.response import HttpResponse, JsonResponse
 from homepage.models import Customer
 from django.shortcuts import redirect, render
 
@@ -32,6 +32,35 @@ class Homepage:
 
             return HttpResponse("注册成功")
 
+    def checkuser(request):
+        username = request.GET.get("username")
+        users = Customer.objects.filter(c_name = username)
+        data = {
+            "status": 200,
+            "msg": '用户名可用'
+        }
+
+        if users.exists():
+            data['status'] = 901
+            data['msg'] = '用户不可用'
+        else:
+            pass
+        return JsonResponse(data = data)
+
+    def checkmail(request):
+        usermail = request.GET.get("useremail")
+        emails = Customer.objects.filter(c_email = usermail)
+        data = {
+            "status": 200,
+            "msg": '邮箱可用'
+        }
+
+        if emails.exists():
+            data['status'] = 901
+            data['msg'] = '邮箱不可用'
+        else:
+            pass
+        return JsonResponse(data = data)
 
 
 

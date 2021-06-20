@@ -24,3 +24,8 @@
     border-bottom: 1px solid #f3efef;
     border-left: 1px solid #CCCCCC;
 }
+
+#submit_info {
+    margin-left: 30%;
+    font-size: 20px;
+}

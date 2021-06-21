@@ -7,6 +7,7 @@ urlpatterns = [
     path('register/', Homepage.register, name="register"),
     path('register/checkuser/', Homepage.checkuser, name="checkuser"),
     path('register/checkmail/', Homepage.checkmail, name="checkmail"),
-    # path('register/checkpassword1/', Homepage.checkpassword1, name="checkpassword1"),
+    path('register/getcheckcode/', Homepage.getcheckcode, name="getcheckcode"),
+    path('register/checkcode/', Homepage.checkcode, name="checkcode"),
     # path('register/checkpassword2/', Homepage.checkpassword2, name="checkpassword2"),
 ]

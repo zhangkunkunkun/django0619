@@ -63,14 +63,14 @@ $(function () {
 
         var $userpassword1_info = $("#userpassword1_info");
         if (firstpassword.length < 6) {
-            $userpassword1_info.html("密码不得少于6位").css("color", 'red');
+            $userpassword1_info.html("密码过短").css("color", 'red');
         }
         else {
             $userpassword1_info.html("ok").css("color", 'green');
             if (secondpassword.length > 0) {
                 var $userpassword2_info = $("#userpassword2_info");
                 if (secondpassword != firstpassword) {
-                    $userpassword2_info.html("两次密码不一致").css("color", 'red');
+                    $userpassword2_info.html("密码不一致").css("color", 'red');
                 }
                 else {
                     $userpassword2_info.html("ok").css("color", 'green');
@@ -89,7 +89,7 @@ $(function () {
         if (secondpassword.length > 0) {
             var $userpassword2_info = $("#userpassword2_info");
             if (secondpassword != firstpassword) {
-                $userpassword2_info.html("两次密码不一致").css("color", 'red');
+                $userpassword2_info.html("密码不一致").css("color", 'red');
             }
             else {
                 $userpassword2_info.html("ok").css("color", 'green');

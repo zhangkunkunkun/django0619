@@ -142,7 +142,7 @@ function getcheckcode() {
         $.getJSON('getcheckcode/', { 'useremail': useremail }, function (data) {
             if (data['status'] === 200) {
                 console.log("success");
-                alert("验证码已发送");
+                document.getElementById("getcheckcode").innerHTML = "验证码已发送";
             } else if (data['status'] === 901) {
                 console.log("failed");
             }

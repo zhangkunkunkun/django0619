@@ -67,7 +67,7 @@ class Homepage:
     def getcheckcode(request):
         usermail = request.GET.get("useremail")
         res = sm(
-            subject='来自极致日语的验证码',
+            subject='极致日语',
             message='您的验证码是: 0896',
             from_email='zhangkunosaka@gmail.com',
             recipient_list=[usermail],

@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="{% static 'register.css' %}">
     <script type="text/javascript" src="{% static 'register.js' %}"></script>
 
+    <!-- <script>
+
+    </script> -->
     {% endblock %}
 </head>
 
@@ -23,8 +26,7 @@
             {% csrf_token %}
             <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp邮箱注册</h1>
             <div class="form-group">
-                <label
-                    for="exampleInputEmail1">用户名&nbsp&nbsp&nbsp&nbsp</label>
+                <label for="exampleInputEmail1">用户名&nbsp&nbsp&nbsp&nbsp</label>
                 <input name="username" type="" class="form-control" id="username_input" placeholder="姓名">
                 <span id="username_info"></span>
             </div>
@@ -41,7 +43,8 @@
             </div>
 
             <div class="form-group"><br><br>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input name="checkcode" type="text" class="form-control" id="checkcode_input" placeholder="请输入验证码">
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input
+                    name="checkcode" type="text" class="form-control" id="checkcode_input" placeholder="请输入验证码">
                 <a class="button" href="#" onclick="getcheckcode(); return false">点击获取验证码</a>
                 <span id="checkcode_info"></span>
             </div>

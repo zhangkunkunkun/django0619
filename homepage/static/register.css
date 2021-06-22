@@ -1,19 +1,22 @@
 .divElement {
-    position: relative;
-    top: 20%;
-    left: 30%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 500px;
-    height: 1000px;
-    background-color: #f7f3f2;
-    border-radius: 42px;
+    position: fixed;
+    width: 50%;
+    margin-left: 40%;
+
+}
+
+.form-group {
+    width: 100%;
+    margin-top: 45px;
+    float: left;
+    font-size: 25px;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .btn {
-    float: right;
-    margin-right: 10%;
-    width: 80%;
+    float: left;
+    width: 70%;
     font: bold 20px Arial;
     text-decoration: none;
     background-color: #f4511e;
@@ -24,6 +27,24 @@
     border-bottom: 1px solid #f3efef;
     border-left: 1px solid #CCCCCC;
 }
+
+.btn_checkcode {
+    float: right;
+    margin-right: 45%;
+    width: 20%;
+    height: 30px;
+    font-size: 10px;
+    text-align: center;
+    background-color: #f4511e;
+    color: #f3f1f1;
+    padding: 1px 1px 1px 1px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #f5f4f4;
+    border-bottom: 1px solid #f3efef;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 50px;
+}
+
 
 #submit_info {
     margin-left: 30%;

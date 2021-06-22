@@ -19,71 +19,56 @@
 <body>
     {% block main %}
     <div class="divElement">
-        <br>
-        <br>
-        <br>
+
         <form method="POST" action="{% url 'register' %}" onsubmit="return check()">
             {% csrf_token %}
-            <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp邮箱注册</h1>
+            
             <div class="form-group">
+                <h1>&nbsp&nbsp&nbsp&nbsp邮箱注册</h1>
                 <label for="exampleInputEmail1">用户名&nbsp&nbsp&nbsp&nbsp</label>
                 <input name="username" type="" class="form-control" id="username_input" placeholder="姓名">
                 <span id="username_info"></span>
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+
             <div class="form-group">
                 <label for="exampleInputEmail1">邮箱地址</label>
                 <input name="useremail" type="email" class="form-control" id="useremail_input" placeholder="邮箱">
                 <span id="useremail_info"></span>
             </div>
 
-            <div class="form-group"><br><br>
-                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input
-                    name="checkcode" type="text" class="form-control" id="checkcode_input" placeholder="请输入验证码">
-                <a class="button" href="#" onclick="getcheckcode(); return false"><p id="getcheckcode">点击获取验证码</p></a>
+            <div class="form-group">
+                <a id="btn_checkcode" class="btn_checkcode" href="#" onclick="getcheckcode(); return false"><p id="getcheckcode">点击获取验证码</p></a>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">验证码&nbsp&nbsp&nbsp&nbsp</label>
+                <input name="checkcode" type="text" class="form-control" id="checkcode_input" placeholder="请输入验证码">
+                
                 <span id="checkcode_info"></span>
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+
             <div class="form-group">
                 <label for="exampleInputPassword1">密码&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
                 <input name="userpassword" type="password" class="form-control" id="userpassword_input1"
                     placeholder="请输入6位以上的密码">
                 <span id="userpassword1_info"></span>
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+
             <div class="form-group">
                 <label for="exampleInputPassword1">密码确认</label>
                 <input type="password" class="form-control" id="userpassword_input2" placeholder="请再次输入密码">
                 <span id="userpassword2_info"></span>
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+
             <label id="submit_info"></label><br>
             <button type="submit" class="btn">注册</button>
         </form>
-        <br><br>
-        <h3>&nbsp&nbsp&nbsp&nbsp</h3>
-        <button type="submit" class="btn">微信注册(待开发）</button>
-        <button type="submit" class="btn">谷歌注册(待开发）</button>
+
+        <div class="form-group">
+            <button type="submit" class="btn">微信注册(待开发）</button>
+            <button type="submit" class="btn">谷歌注册(待开发）</button>
+        </div>
+        
     </div>
     {% endblock %}
 </body>

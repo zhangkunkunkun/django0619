@@ -132,7 +132,7 @@ function check() {
     }
 }
 
-
+// 点击获取验证码按钮按下时
 function getcheckcode() {
     var $useremail = $("#useremail_input");
     var $useremail_info = $("#useremail_info");

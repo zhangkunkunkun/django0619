@@ -66,24 +66,26 @@ class Homepage:
 
     def getcheckcode(request):
         usermail = request.GET.get("useremail")
-        res = sm(
-            subject='极致日语',
-            message='您的验证码是: 0896',
-            from_email='zhangkunosaka@gmail.com',
-            recipient_list=[usermail],
-            fail_silently=False,
-        )
         data = {
-                "status": 200,
+            "status": 200,
         }
+        if (usermail != ""):
+            res = sm(
+                subject='极致日语',
+                message='您的验证码是: 0896',
+                from_email='zhangkunosaka@gmail.com',
+                recipient_list=[usermail],
+                fail_silently=False,
+            )
+        else:
+            data["status"] = 901
+
         return JsonResponse(data=data)
-
-
 
     def checkcode(request):
         checkcode = request.GET.get("checkcode")
         data = {
-                "status": 901,
+            "status": 901,
         }
         if (checkcode == '0896'):
             data["status"] = 200

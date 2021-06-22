@@ -1,5 +1,5 @@
 .divElement {
-    position: fixed;
+    position: relative;
     width: 50%;
     height: 100%;
     margin-left: 35%;

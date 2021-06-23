@@ -73,7 +73,7 @@ class Homepage:
             res = sm(
                 subject='极致日语',
                 message='您的验证码是: 0896',
-                from_email='zhangkunosaka@gmail.com',
+                from_email='zkun@toralab.org',
                 recipient_list=[usermail],
                 fail_silently=False,
             )
